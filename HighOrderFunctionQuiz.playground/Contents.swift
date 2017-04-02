@@ -8,8 +8,7 @@ func squareOfSums(_ num: Int) -> Int {
         result += item
     }*/
     
-    result = Int(Array(1...num).reduce(0, +))
-    
+    result = Array(1...num).reduce(0, +)
     return result * result
 }
 
@@ -27,7 +26,7 @@ func sumOfSquares(_ num: Int) -> Int {
         result += item * item
     }*/
     
-    result = Int(Array(1...num).reduce(0, {$0 + $1 * $1}))
+    result = Array(1...num).reduce(0, {$0 + $1 * $1})
     return result
 }
 
